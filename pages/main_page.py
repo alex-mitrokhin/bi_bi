@@ -9,7 +9,6 @@ class MainPage(Base):
 
     url = 'https://www.bi-bi.ru/'
 
-
     # Locators
 
     popup = '//button[@class="app-button app-button--dark app-button--small confirm-city-popup__button"]'
