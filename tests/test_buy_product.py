@@ -9,8 +9,9 @@ from pages.main_page import MainPage
 
 
 def test_buy_product_1(set_group):
-    driver = webdriver.Chrome(service=Service('C:\\Users\\aleksey.mitrokhin\\PycharmProjects\\resourse\\chromedriver.exe'))
+    """Тест покупки товара в интернет-магазине"""
 
+    driver = webdriver.Chrome(service=Service('C:\\Users\\aleksey.mitrokhin\\PycharmProjects\\resourse\\chromedriver.exe'))
     print('Start Test 1')
 
     mp = MainPage(driver)

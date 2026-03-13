@@ -10,10 +10,6 @@ class MainPage(Base):
 
     url = 'https://www.bi-bi.ru/'
 
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.driver = driver
-
 
     # Locators
 

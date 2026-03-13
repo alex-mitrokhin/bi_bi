@@ -7,10 +7,6 @@ from base.base_class import Base
 class CartPage(Base):
     """ Класс содержащий локаторы и методы для страницы Корзина """
 
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.driver = driver
-
 
     # Locators
     registration_button = '//a[@class="app-button app-button--yellow"]'

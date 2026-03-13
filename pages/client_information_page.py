@@ -7,10 +7,6 @@ from base.base_class import Base
 class ClientInformationPage(Base):
     """ Класс содержащий локаторы и методы для страницы Информации о клиенте """
 
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.driver = driver
-
 
     # Locators
 
@@ -69,3 +65,4 @@ class ClientInformationPage(Base):
         self.click_payment_method()
         self.click_arrange_button()
         self.assert_word(self.get_main_word(), 'Введите код')
+        self.get_screenshot()

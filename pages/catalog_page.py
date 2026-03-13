@@ -10,10 +10,6 @@ from base.base_class import Base
 class CatalogPage(Base):
     """ Класс содержащий локаторы и методы для страницы Каталог """
 
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.driver = driver
-
 
     # Locators
 
@@ -129,12 +125,11 @@ class CatalogPage(Base):
 
     def filter_select_product(self):
         """ Выбор продукта по фильтрам """
-
         self.get_current_url()
         self.input_brand_field('Лукойл')
         self.click_brand_checkbox()
         self.move_price_slider()
-        time.sleep(1)
+        time.sleep(2)
         self.move_volume_slider()
         self.click_acea_checkbox()
         self.click_vyazkost_checkbox()
